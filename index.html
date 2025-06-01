@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Website for changing sentences">
+    <meta name="author" content="Jakub Líska">
+    <meta name="keywords" content="sentences, change, text">
+    <title>Otočení věty</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link  rel="stylesheet" href ="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="w3-container w3-red w3-center" style="margin: 10px;">
+            <h1>Otočení věty</h1>
+        </div>
+    </header>
+    <main>
+        <div class="w3-container" style="margin: 10px; padding: 10px;">
+            <div class="spacer sidespacer">
+                <label for="vstup" class="w3-text-red"><b>Vstupní slovo/věta:</b></label><br>
+                <textarea id="vstup" class="w3-input w3-border" style="resize: none;" aria-label="Vstupní slovo nebo věta"></textarea><br><br>
+                <input type="checkbox" id="policko" class="w3-check">
+                <label for="policko" class="w3-text-red">Otočit celou větu</label><br><br>
+                <button id="tlac" class="w3-button w3-red" aria-label="Spustit otočení věty">Spustit</button><br><br>
+                <label for="vystup" class="w3-text-red"><b>Výstupní slovo/věta:</b></label><br>
+                <textarea id="vystup" class="w3-input w3-border" readonly style="resize: none; white-space: nowrap;" aria-label="Výstupní slovo nebo věta"></textarea>
+            </div>
+        </div>
+    </main>
+   <!-- <footer class="w3-container w3-red w3-center">
+         <p>© 2024 Jakub Líska</p>
+    </footer> -->
+    <!--Footer is buggy-->
     <script src="script.js"></script>
 </body>
 </html>
